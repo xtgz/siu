@@ -50,8 +50,8 @@ if (argv.phrase) {
 settings[selectedChain].do = {meta: true};
 if (argv.fomo) {
     settings[selectedChain].do.fomo = true;
-    if (argv.meta) {
-        settings[selectedChain].do.meta = true;
+    if (!argv.meta) {
+        settings[selectedChain].do.meta = false;
     }
 }
 
